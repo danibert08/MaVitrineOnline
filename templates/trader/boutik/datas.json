@@ -1,0 +1,80 @@
+{
+  "dossier": "ypria",
+  "nom": "JEUNE",
+  "prenom" : "Junia",
+  "nom_commercial" : "YPRIA_BEAUTY",
+  "raison_sociale" : "YPRIA_BEAUTY",
+  "metier": "Prothésiste Ongulaire et Maquilleuse",
+  "activite": "Pose de prothèse ongulaire et maquillage d'évènement",
+  "genre_publication": "La directrice",
+  "commune": "Pétion-Ville",
+  "telephone" : "509 42746851",
+  "mail" : "ypria@gmail.com",
+  "forme_juridique": "Entreprise Individuelle",
+  "siren": "004-918-295-6",
+  "rue":"Route de frères",
+  "ville": "Pétion-Ville",
+  "pays": "Haïti",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2288.6867142164897!2d-72.27697753850119!3d18.530180484980434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDMxJzUxLjgiTiA3MsKwMTYnMzQuMCJX!5e0!3m2!1sfr!2sfr!4v1774456424966!5m2!1sfr!2sfr",
+  "theme_couleur": "flamant",
+  "tag_title": "YPRIA_BEAUTY : votre prothésiste ongulaire - Travail soigné",
+  "meta_description": "Pour votre mariage, je vous maquille et m'occupe de vos ongles et vous serez la plus belle de la journée.",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "favicon" : "images/logo/logo.jpeg",
+  "tiktok": "https://www.tiktok.com/@ypria_?_r=1&_t=ZN-93t81PboCjD",
+  "instagram": "https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==",
+  "facebook": "https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "navTitle":"Ongles",
+      "activite": "Ongles",
+      "text": "Passionnée par l’esthétique et le soin du détail, je vous accompagne pour sublimer vos mains et affirmer votre style. Que vous souhaitiez une pose de vernis semi-permanent pour votre quotidien, des extensions en gel pour une longueur parfaite ou un gainage pour renforcer vos ongles naturels, je mets mon expertise à votre service.<br><br>Je travaille avec des produits de haute qualité et dans le respect total de l'hygiène pour garantir la santé de vos ongles. Venez profiter d’un moment de détente rien qu’à vous.",
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
+    },
+    {
+      "id": "2",
+      "navTitle": "Maquillage",
+      "activite": "Maquillage",
+      "text": "Révéler votre beauté, sans jamais la transformer. ✨ <br><br>Passionnée par le travail du teint et de la lumière, je vous propose une mise en beauté sur mesure qui souligne vos atouts naturels. <br><br>Du maquillage 'nude' ultra-frais pour un événement en journée au look 'glowy' sophistiqué, je sélectionne les meilleures textures pour un résultat longue tenue et un confort absolu. <br><br>Accordez-vous une parenthèse de douceur et laissez-moi illuminer votre visage.",
+      "dossier_photos": "photos2",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""   
+    }
+   
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Parce que chaque femme est unique, mes tarifs sont étudiés sur mesure pour s'adapter précisément à vos envies et à la nature de vos ongles ou de votre peau.<br><br>Que ce soit pour une pose de gel sophistiquée, un Nail Art artistique ou une mise en beauté du visage pour un événement, le prix de mes prestations varie en fonction de la technicité du travail et des produits utilisés."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"Passionnée par l’art de sublimer, j’ai choisi de conjuguer mes deux talents : la prothésie ongulaire et le maquillage. <br><br>Parce que votre confiance est ma priorité, je mets un point d’honneur à me former très régulièrement auprès des meilleurs experts. <br><br>Chaque année, je multiplie les formations pour maîtriser les dernières innovations techniques et les tendances du moment. <br><br>Que ce soit pour une pose d'ongles architecturale ou un maquillage haute performance, mon objectif reste le même : vous offrir une prestation de haute qualité, sécuritaire et parfaitement exécutée."
+  }
+
+  
+
+}

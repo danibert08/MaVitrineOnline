@@ -1,0 +1,54 @@
+{% extends 'trader/boutik/base_boutik.html.twig' %}
+{% block title %} {{ data.nom_commercial }} | Manucure {% endblock %}
+
+{% block body %}
+    <section class="container py-5" id="shop">
+    <div class="d-flex justify-content-between align-items-end mb-5">
+        <div>
+            <h2 class="fw-bold">Mes réalisations :</h2>
+            <p class="text-muted">{{ data.sections[0].text }}</p>
+        </div>
+    </div>
+    <div class="row g-3">
+        {% for image in images %}
+        <div class="col-6 col-md-4 col-lg-4">
+            <div class="product-card">
+                <div class="img-wrapper mb-3">
+                    <div class="w-100 h-100 bg-light"><img src="{{ asset ('images/' ~ data.dossier ~ '/' ~ image ~ '.jpeg') }}" alt=""></div>
+                </div>
+                <h6 class="fw-bold mb-1">Veste en Lin Beige</h6>
+                <p class="text-muted small mb-2">Homme</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold fs-5 text-danger">89.00 € <del class="text-muted fs-6 fw-normal">110€</del></span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="col-6 col-md-4 col-lg-4">
+            <div class="product-card">
+                <div class="img-wrapper mb-3">
+                    <div class="w-100 h-100 bg-light"><img src="{{ asset ('images/' ~ data.dossier ~ '/p3.jpeg') }}" alt=""></div>
+                </div>
+                <h6 class="fw-bold mb-1">Montre Minimaliste Silver</h6>
+                <p class="text-muted small mb-2">Accessoires</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold fs-5">129.00 €</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-4">
+            <div class="product-card">
+                <div class="img-wrapper mb-3">
+                    <div class="w-100 h-100 bg-light"><img src="{{ asset ('images/' ~ data.dossier ~ '/v4.jpeg') }}" alt=""></div>
+                </div>
+                <h6 class="fw-bold mb-1">Jean moderne</h6>
+                <p class="text-muted small mb-2">Ado</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold fs-5 text-danger">115.00 € <del class="text-muted fs-6 fw-normal">150€</del></span>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+</section>
+{% endblock %}

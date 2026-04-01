@@ -1,0 +1,41 @@
+<footer class="bg-white pt-5 pb-4">
+    <div class="container text-center">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <a class="navbar-brand fw-bold fs-5 mb-3 d-block" href="#">{{ data.metier }}</a>
+                <p class="text-muted fs-5 mb-4">{{ data.nom_commercial }} ajoute de l'élégance à votre beauté</p>
+                <div class="d-flex gap-3 justify-content-center">
+                    <a href="https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@ypria_?_r=1&_t=ZN-93t81PboCjD" class="text-dark fs-5"><i class="bi bi-tiktok"></i></a>
+                    <a href=" https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 text-lg-center">
+                <h6 class="fw-bold mb-4 text-uppercase" style="letter-spacing: 1px;">Mes services</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="{{ asset (path = 'trader/boutik/manucure') }}" class="text-muted text-decoration-none hover-dark">Manucure</a></li>
+                    <li class="mb-2"><a href="{{ asset (path = 'trader/boutik/pedicure') }}" class="text-muted text-decoration-none">Pédicure</a></li>
+                    <li class="mb-2"><a href="{{ asset (path = 'trader/boutik/maquillage') }}" class="text-muted text-decoration-none">Maquillage</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <h6 class="fw-bold mb-4 text-uppercase" style="letter-spacing: 1px;">Me trouver</h6>
+                <p class="text-muted mb-2">{{ data.rue }} {{ data.ville}}</p>
+                <p class="text-muted mb-3">{{ data.mail }}</p>
+                <p>Appel whatsApp : <span class="hero-badge mb-3 d-inline-block"><a href="whatsapp://send?phone={{ data.telephone }}" class="call"><span class="bi bi-phone-fill me-1"></span>{{ data.telephone }}</a></span></p>
+            </div>
+        </div>
+
+        <hr class="my-5 opacity-10">
+
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="text-muted small mb-0">&copy; 2026 {{ data.nom_commercial }}. Propulsé par InformAcc.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                <a class="legals_mentions" href="{{asset ( path = '/trader/mentions')}}">Mentions Légales</a>
+            </div>
+        </div>
+    </div>
+</footer>
