@@ -5,6 +5,9 @@ framework:
             - assets/
         missing_import_mode: strict
 
+        # FORCE le préfixe de l'URL générée (Solution à ton problème)
+        public_prefix: /assets/
+
 when@prod:
     framework:
         asset_mapper:

@@ -4,8 +4,10 @@ framework:
 
     # Note that the session will be started ONLY if you read or write from it.
     session: true
-
     #esi: true
+    assets:
+        # On s'assure qu'aucun préfixe bizarre n'est ajouté
+        base_path: /
     #fragments: true
 
 when@test:
