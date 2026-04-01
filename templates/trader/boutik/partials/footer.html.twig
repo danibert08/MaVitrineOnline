@@ -14,9 +14,9 @@
             <div class="col-12 col-lg-4 text-lg-center">
                 <h6 class="fw-bold mb-4 text-uppercase" style="letter-spacing: 1px;">Mes services</h6>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="{{ asset (path = 'trader/boutik/manucure') }}" class="text-muted text-decoration-none hover-dark">Manucure</a></li>
-                    <li class="mb-2"><a href="{{ asset (path = 'trader/boutik/pedicure') }}" class="text-muted text-decoration-none">Pédicure</a></li>
-                    <li class="mb-2"><a href="{{ asset (path = 'trader/boutik/maquillage') }}" class="text-muted text-decoration-none">Maquillage</a></li>
+                    <li class="mb-2"><a href="{{ path ( name = 'trader_boutik_manucure') }}" class="text-muted text-decoration-none hover-dark">Manucure</a></li>
+                    <li class="mb-2"><a href="{{ path ( name = 'trader_boutik_pedicure') }}" class="text-muted text-decoration-none">Pédicure</a></li>
+                    <li class="mb-2"><a href="{{ path ( name = 'trader_boutik_maquillage') }}" class="text-muted text-decoration-none">Maquillage</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 text-lg-end">
@@ -34,7 +34,7 @@
                 <p class="text-muted small mb-0">&copy; 2026 {{ data.nom_commercial }}. Propulsé par InformAcc.</p>
             </div>
             <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                <a class="legals_mentions" href="{{asset ( path = '/trader/mentions')}}">Mentions Légales</a>
+                <a class="legals_mentions" href="{{ path ( name = 'trader_boutik_mentions') }}">Mentions Légales</a>
             </div>
         </div>
     </div>
