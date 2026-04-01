@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container ">
         <img src="{{ asset ('images/ypria/logo.jpeg') }}" width="60" class="me-3" alt="">
-        <a class="navbar-brand fw-bold fs-3" href="{{ asset (path = 'trader/home') }}">{{ data.nom_commercial }}</a>
+        <a class="navbar-brand fw-bold fs-3" href="{{ path ( name = 'trader_home') }}">{{ data.nom_commercial }}</a>
         
         <div class="d-flex align-items-center order-lg-last">
             
@@ -12,9 +12,9 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto text-center">
-                <li class="nav-item"><a class="nav-link" href="{{ asset (path = 'trader/boutik/manucure') }}">Manucure</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ asset (path = 'trader/boutik/pedicure') }}">pédicure</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ asset (path = 'trader/boutik/maquillage') }}">Maquillage</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ path ( name = 'trader_boutik_manucure') }}">Manucure</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ path ( name = 'trader_boutik_pedicure') }}">pédicure</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ path ( name = 'trader_boutik_maquillage') }}">Maquillage</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Qui suis-je</a></li>
             </ul>
         </div>
