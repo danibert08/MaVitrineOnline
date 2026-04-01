@@ -23,7 +23,7 @@ class TraderBoutikController extends AbstractController
     // Petit message de debug pour la prod
     die("Erreur : Le fichier est introuvable à l'adresse : " . $json_path);
     }
-        return $this->render('trader/boutik/home.html.twig',[
+        return $this->render('/trader/boutik/home.html.twig',[
                     'data' => $data,
         ]);
     }
@@ -41,7 +41,7 @@ class TraderBoutikController extends AbstractController
     // Petit message de debug pour la prod
     die("Erreur : Le fichier est introuvable à l'adresse : " . $json_path);
     }
-        return $this->render('trader/boutik/mentions.html.twig',[
+        return $this->render('/trader/boutik/mentions.html.twig',[
                 'data' => $data
         ]);
     }
@@ -64,7 +64,7 @@ class TraderBoutikController extends AbstractController
         $images[] = "m$i";
     }
     
-        return $this->render('trader/boutik/manucure.html.twig',[
+        return $this->render('/trader/boutik/manucure.html.twig',[
                 'data' => $data,
                 'images' => $images,
         ]);
@@ -88,7 +88,7 @@ class TraderBoutikController extends AbstractController
         $images[] = "p$i";
     }
     
-        return $this->render('trader/boutik/pedicure.html.twig',[
+        return $this->render('/trader/boutik/pedicure.html.twig',[
                 'data' => $data,
                 'images' => $images,
         ]);
@@ -112,7 +112,7 @@ class TraderBoutikController extends AbstractController
         $images[] = "v$i";
     }
     
-        return $this->render('trader/boutik/maquillage.html.twig',[
+        return $this->render('/trader/boutik/maquillage.html.twig',[
                 'data' => $data,
                 'images' => $images,
         ]);

@@ -13,7 +13,7 @@ class MainController extends AbstractController
     {
         $favicon='/assets/images/favicon.png';
 
-        return $this->render('home.html.twig', [
+        return $this->render('/home.html.twig', [
             'favicon' => $favicon,
         ]);
     }
@@ -21,7 +21,7 @@ class MainController extends AbstractController
     #[Route('/trader/admin/', name:'trader_admin')]
     public function trader_admin(): Response
     {
-        return $this->render('trader/admin/index.html.twig');
+        return $this->render('/trader/admin/index.html.twig');
     }
 
     
@@ -29,12 +29,12 @@ class MainController extends AbstractController
     #[Route('/trader/admin/categories/', name: 'trader_admin_categories')]
     public function show_categories(): Response
     {
-        return $this->render('trader/admin/categories.html.twig',);
+        return $this->render('/trader/admin/categories.html.twig',);
     }
 
     #[Route('/trader/admin/products/', name: 'trader_admin_products')]
     public function show_products(): Response
     {
-        return $this->render('trader/admin/products.html.twig',);
+        return $this->render('/trader/admin/products.html.twig',);
     }
 }
