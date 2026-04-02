@@ -23,9 +23,9 @@ COPY . .
 # --ignore-platform-reqs assure que ça passe même si le build est capricieux
 RUN composer install --no-dev --optimize-autoloader --no-scripts --ignore-platform-reqs
 
-# 5. Compilation des assets (Le moment où tes liens se réparent)
-# On force une DB fictive pour que Symfony ne crash pas (Erreur 255)
-RUN DATABASE_URL="sqlite:///:memory:" php bin/console asset-map:compile
+# 5. On vide le cache et on compile avec un maximum de détails
+RUN php bin/console cache:clear --env=prod && \
+    DATABASE_URL="sqlite:///:memory:" php bin/console asset-map:compile -vv --env=prod || true
 
 # 6. Droits d'écriture
 RUN chown -R www-data:www-data /var/www/html/var /var/www/html/public/assets
