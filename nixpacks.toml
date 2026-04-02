@@ -1,0 +1,22 @@
+[phases.setup]
+    nixPkgs = [
+        'php82', 
+        'php82Packages.composer', 
+        'unzip', 
+        'php82Extensions.intl', 
+        'php82Extensions.pdo_mysql', 
+        'php82Extensions.zip'
+    ]
+
+[phases.install]
+    # On ajoute la limite de mémoire directement ici pour éviter le crash
+    cmds = ['COMPOSER_MEMORY_LIMIT=-1 composer install --no-dev --optimize-autoloader --no-scripts']
+
+[phases.build]
+    cmds = [
+        'php bin/console asset-map:compile',
+        'php bin/console cache:clear'
+    ]
+
+[start]
+    cmd = 'php -S 0.0.0.0:80 -t public'
