@@ -28,4 +28,6 @@ RUN php bin/console cache:clear --env=prod && \
     DATABASE_URL="sqlite:///:memory:" php bin/console asset-map:compile -vv --env=prod || true
 
 # 6. Droits d'écriture
-RUN chown -R www-data:www-data /var/www/html/var /var/www/html/public/assets
+# On crée les dossiers au cas où ils n'existeraient pas pour éviter que le chown ne plante
+RUN mkdir -p /var/www/html/var /var/www/html/public/assets && \
+    chown -R www-data:www-data /var/www/html/var /var/www/html/public/assets
