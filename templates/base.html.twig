@@ -24,8 +24,9 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
             integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" /> -->
         <!-- We can still have our own CSS file -->
-        {% block javascripts %}
-           {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% block css %}
+           {% block app %}{{ asset ('styles/app.css') }}{% endblock %}
+           {% block style %}{{ asset ('styles/style.css') }}{% endblock %}
         {% endblock %}
         
     </head>
