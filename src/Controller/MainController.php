@@ -13,7 +13,7 @@ class MainController extends AbstractController
     {
         $favicon='/assets/images/favicon.png';
 
-        return $this->render('/home.html.twig', [
+        return $this->render('home.html.twig', [
             'favicon' => $favicon,
         ]);
     }
