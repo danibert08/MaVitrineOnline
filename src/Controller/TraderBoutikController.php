@@ -23,7 +23,7 @@ class TraderBoutikController extends AbstractController
     // Petit message de debug pour la prod
     die("Erreur : Le fichier est introuvable à l'adresse : " . $json_path);
     }
-        return $this->render('../template/trader/boutik/home.html.twig',[
+        return $this->render('template/trader/boutik/home.html.twig',[
                     'data' => $data,
         ]);
     }
