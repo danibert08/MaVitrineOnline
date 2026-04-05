@@ -1,0 +1,13 @@
+[phases.setup]
+nixPkgs = ["php", "nginx"]
+
+[variables]
+APP_ENV = "prod"
+APP_DEBUG = "false"
+NIXPACKS_PHP_ROOT_DIR = "public"
+
+[phases.build]
+cmds = [
+  "composer install --no-dev --optimize-autoloader",
+  "php bin/console asset-map:compile"
+]
