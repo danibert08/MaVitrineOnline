@@ -1,14 +1,34 @@
 [phases.setup]
-nixPkgs = ["php", "nginx"]
+# Installer PHP et Nginx
+nixPkgs = ["php", "nginx", "nodejs", "npm"]
 
 [variables]
-APP_ENV = "prod"
-APP_DEBUG = "false"
+# Racine web = public
 NIXPACKS_PHP_ROOT_DIR = "public"
+# Fallback Symfony
 NIXPACKS_PHP_FALLBACK_PATH = "/index.php"
+# Environnement Symfony
+APP_ENV = "prod"
+APP_DEBUG = "0"
 
 [phases.build]
 cmds = [
+  # Installer PHP dependencies
   "composer install --no-dev --optimize-autoloader",
-  "php bin/console asset-map:compile"
+
+  # Compiler et copier les assets
+  "npm install",
+  "npm run build",                 # si tu utilises Vite ou autre build JS/CSS
+  "mkdir -p public/assets",
+  "cp -R public/build/* public/assets/",
+
+  # Générer l'asset map Symfony
+  "php bin/console asset-map:compile",
+
+  # Nettoyer le cache
+  "php bin/console cache:clear --env=prod"
 ]
+
+[phases.start]
+# Démarrer PHP-FPM et Nginx
+cmd = "php-fpm -D && nginx -g 'daemon off;'"
