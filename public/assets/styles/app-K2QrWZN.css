@@ -1,0 +1,14 @@
+body {
+    
+    font-family: 'Inter', sans-serif; 
+}
+
+.hero-section { padding: 100px 0; background-color: #f8f9fa; }
+.btn-primary { background-color: #6366f1; border: none; padding: 12px 30px; }
+.btn-primary:hover { background-color: #4f46e5; }
+.navbar-brand { font-weight: bold; color: #000 !important; }
+.hero-img { border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+.table-head-color th{
+    background-color: #6366f1;
+    color: white;
+}

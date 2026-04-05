@@ -16,11 +16,6 @@ cmds = [
   # Installer PHP dependencies
   "composer install --no-dev --optimize-autoloader",
 
-  # Compiler et copier les assets
-  "npm install",
-  "npm run build",                 # si tu utilises Vite ou autre build JS/CSS
-  "mkdir -p public/assets",
-  "cp -R public/build/* public/assets/",
 
   # Générer l'asset map Symfony
   "php bin/console asset-map:compile",
